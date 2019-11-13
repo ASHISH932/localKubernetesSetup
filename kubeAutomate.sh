@@ -1,16 +1,16 @@
-	echo "Setting up the dev enviornment.."
-  if test ! $(which brew); then
-    echo "Installing homebrew..."
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  fi
+echo "Setting up the dev enviornment.."
+	if test ! $(which brew); then
+		echo "Installing homebrew..."
+		ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	fi
 
-  if test ! $(which minikube); then
-    echo "Installing minikube..."
+	if test ! $(which minikube); then
+		echo "Installing minikube..."
 		brew install minikube
 		echo "Minikube Installation Complete"
 	fi
 
-  if test ! $(which kubectl); then
+	if test ! $(which kubectl); then
 		echo "Installing kubectl..."
 		brew install kubectl
 		echo "kubectl Installation Complete"
@@ -31,4 +31,4 @@
 		echo "Draft initialised"
 	fi
 
-	echo "Your enviornment is Kubernetes friendly :)"
+echo "Your enviornment is Kubernetes friendly :)"
