@@ -6,7 +6,7 @@
 
   if test ! $(which minikube); then
     echo "Installing minikube..."
-		brew cask install minikube
+		brew install minikube
 		echo "Minikube Installation Complete"
 	fi
 
