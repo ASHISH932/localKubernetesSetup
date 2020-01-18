@@ -1,4 +1,4 @@
-echo "Setting up the dev enviornment.."
+echo "Setting up the dev environment.."
 	if test ! $(which brew); then
 		echo "Installing homebrew..."
 		ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -19,7 +19,7 @@ echo "Setting up the dev enviornment.."
 	if test ! $(which helm); then
 		echo "Installing helm ..."
 		brew install kubernetes-helm
-		echo "Helm installation completed"
+		echo "Helm installation Complete"
 	fi
 
 	if test ! $(which draft); then
@@ -31,4 +31,4 @@ echo "Setting up the dev enviornment.."
 		echo "Draft initialised"
 	fi
 
-echo "Your enviornment is Kubernetes friendly :)"
+echo "Your environment is Kubernetes friendly :)"
